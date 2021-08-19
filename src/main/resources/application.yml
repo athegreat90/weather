@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:local
+    username: sa
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: false
+
+server:
+  port: 8081
+
+logging:
+  level:
+    org:
+      springframework:
+        transaction:
+          interceptor: TRACE
